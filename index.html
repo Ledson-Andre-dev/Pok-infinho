@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokéinfinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="hero">
+        
+        <h1>Pokéinfinho</h1>
+
+        <form action="" method="get">
+            <input class="barra_pesquisa" id="barra_pesquisa" type="text" id="barra_pesquisa" name="busca" placeholder="Digite o nome do Pokémon">
+            <button class="btn-pesquisa" id="btn-pesquisa" type="submit"><img class="img-pesquisa" src="/Assets/img/icons8-pesquisar.svg" alt="icon de pesquisa"></button>
+        </form> 
+
+        <section class="secao_1">
+            
+            <div class="container-img">
+                <h2 class="nome-pokemon" id="nome-pokemon" ></h2>
+                <select class="seletor-formas" id="seletor-formas" ></select>
+                <img class="img-pokemon" id = "img-pokemon" alt="Imagem do Pokemon">
+            </div>
+
+            <div class="container-hexagono">
+                <div class="hexagono">
+
+                    <div class="hexagono-2">
+                        <div class="hexagono-3"></div>
+                    </div>
+
+                    <div class="hexagono-fill" id="hexagono-fill">
+                    </div>
+                </div>
+                
+                <div class="ponto-status t1">
+                    <span class="nome-status">HP</span>
+                    <span class="valor-status" id="HP">0 / 0</span>
+                </div>
+
+                <div class="ponto-status t2">
+                    <span class="nome-status">Ataque</span>
+                    <span class="valor-status" id="Ataque">0</span>
+                </div>
+
+                <div class="ponto-status t3">
+                    <span class="nome-status">Defesa</span>
+                    <span class="valor-status" id="Defesa">0</span>
+                </div>
+                
+                <div class="ponto-status t4">
+                    <span class="nome-status">Velocidade</span>
+                    <span class="valor-status" id="Velocidade">0</span>
+                </div>
+                
+                <div class="ponto-status t5">
+                    <span class="nome-status">Atq.Esp</span>
+                    <span class="valor-status" id="AtqEsp">0</span>
+                </div>
+                
+                <div class="ponto-status t6">
+                    <span class="nome-status">Def.Esp</span>
+                    <span class="valor-status" id="DefEsp">0</span>
+                </div>
+            </div>
+        </section>
+
+         
+
+        <section class="secao_2">
+
+            <div class="container-tipo" id="container-tipo">
+                <h2 class="titulo-tipo">Tipo</h2>
+
+            </div>
+
+            <div class="container-habilidades">
+               <h2 class="titulo-habilidades">Habilidades</h2>
+               <div class="selecao-habilidade" id="selecao-habilidade">
+                
+                   
+               </div>
+
+               <div class="info-habilidade">
+                <p class="habilidade" id="habilidade"></p>
+               </div> 
+
+            </div>
+
+        </section> 
+        
+       
+
+        <section class="secao_3">
+            
+            <table class="tabela-dados">
+                
+                <tr class="linha-cabecalho">
+                    
+                    <th class="celula-cabecalho" >National №</th>
+                    <th class="celula-cabecalho" >Espécie </th>
+                    <th class="celula-cabecalho ">Altura</th>
+                    <th class="celula-cabecalho">Peso</th>
+                </tr>
+                
+                <tr class="linha-dados">
+                    <td class="celula-dado" id="celula_National-N"></td>
+                    <td class="celula-dado" id="celula_Especie"></td>
+                    <td class="celula-dado" id="celula_Altura"></td>
+                    <td class="celula-dado"  id="celula_Peso"></td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

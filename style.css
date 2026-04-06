@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #f85a69;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='4' opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='35'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3Cline x1='15' y1='50' x2='40' y2='50'/%3E%3Cline x1='60' y1='50' x2='85' y2='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 40px 40px;
+    color: #121212;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'Montserrat';
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 2rem ;
+}
+
+.hero{
+    background-color: rgb(255, 255, 255);
+    width: 76.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    margin: 2rem 0 4rem 0;   
+}
+
+.barra_pesquisa{
+    width: 25rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    border: #121212 solid 2px;
+    border-right:none;
+}
+
+.btn-pesquisa{
+    background: transparent; 
+    outline: none;                  
+    cursor: pointer;
+    border: #121212 solid 2px;
+    border-radius: 0 0.25rem 0.25rem 0;  
+      
+}
+
+.secao_1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+   
+}
+
+.container-hexagono {
+    position: relative; 
+    width: 300px;
+    height: 300px;
+    margin: 40px; 
+}
+
+
+.hexagono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #2A75BB; /* Azul principal */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.hexagono-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 75%;
+    background-color: #1D4B87; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.hexagono-3{
+    width: 50%;
+    height: 50%;
+    background-color: #2A75BB;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.hexagono-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: #FFCB05; 
+
+    
+    transition: clip-path 0.5s ease-out; 
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+}
+
+
+.ponto-status {
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.nome-status {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.valor-status {
+    font-size: 14px;
+    font-weight:normal;
+}
+
+
+.t1 { 
+    top: 0%;   
+    left: 50%; 
+    margin-top: -20px; 
+}  
+
+.t2 { 
+    top: 25%;  
+    left: 100%; 
+    margin-left: 35px; 
+} 
+
+.t3 { 
+    top: 75%;  
+    left: 100%; 
+    margin-left: 35px; 
+} 
+
+.t4 { 
+    top: 100%; 
+    left: 50%; 
+    margin-top: 20px; 
+}  
+
+.t5 { 
+    top: 75%;  
+    left: 0%; 
+    margin-left: -35px; 
+}   
+
+.t6 { 
+    top: 25%;  
+    left: 0%; 
+    margin-left: -35px; 
+} 
+
+.nome-pokemon{
+margin: 1rem 0;
+}
+
+.seletor-formas{
+ font-family: 'Montserrat';
+ font-size: 1.5rem;
+ font-weight: bold;
+ border: none;
+ outline: none;
+ margin: 1rem 0;
+ display: none;
+}
+
+.img-pokemon{
+    width: 22.5rem;
+    height: 25rem;
+    padding-bottom: 1rem;
+    border-bottom: #d0d0d0 solid 2px;
+    border-top: #d0d0d0 solid 2px;
+}
+
+.secao_2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 5rem 0rem 2rem 0rem;
+    width: 100%;
+    column-gap: 9rem;
+    
+}
+
+.container-tipo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+
+}
+
+.badge-tipo{
+    width: 14rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.normal {
+    background-color: #A8A878;
+}
+
+.fire {
+    background-color: #F08030;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.electric {
+    background-color: #F8D030;
+}
+
+.grass {
+    background-color: #78C850;
+}
+
+.ice {
+    background-color: #98D8D8;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.ground {
+    background-color: #E0C068;
+}
+
+.flying {
+    background-color: #A890F0;
+}
+
+.psychic {
+    background-color: #F85888;
+}
+
+.bug {
+    background-color: #A8B820;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.steel {
+    background-color: #B8B8D0;
+}
+
+.fairy {
+    background-color: #EE99AC;
+}
+
+.titulo-tipo{
+    margin: 0;
+}
+
+.nome-tipo{
+    margin: 0;
+}
+
+
+.selecao-habilidade{
+    display: flex;
+    column-gap: 0.25rem;
+
+}
+
+.info-habilidade{
+    width: 36rem;
+    height: 10rem;
+    border: #121212 solid 2px;
+    padding: 0 1rem;
+
+    line-height: 1.3rem;
+    overflow-y: auto ;
+}
+
+.titulo-habilidades{
+    margin: 0;
+}
+
+.btn-habilidade{ 
+    font-family: 'Montserrat';
+    background: transparent; 
+    width: 12rem;
+    height: 2rem;
+    outline: none;           
+    padding: 0;            
+    cursor: pointer;
+    border:  #121212 solid 0.15rem;  
+    border-bottom: none;    
+}
+
+.secao_3{
+    border: #121212 solid 2px;
+    padding: 1rem;
+    margin-top:4rem ;
+    margin-bottom:2rem ;
+    width:70%;
+    display: flex;
+    text-align: center;
+}
+
+.tabela-dados{
+    width: 100%;
+}
+
+.linha-cabecalho{
+    width: 50px;
+}
+
+.celula-dado{
+    width: 50px;
+}
